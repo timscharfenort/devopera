@@ -18,6 +18,12 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
     "sass-mq": "^3.3.0-beta.3",
-    "susy": "^2.2.12"
-  }
+    "susy": "^2.2.12",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
